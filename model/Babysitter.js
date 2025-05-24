@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const BabysitterSchema = new Schema({
@@ -29,4 +29,4 @@ const BabysitterSchema = new Schema({
   timestamps: true
 });
 
-module.exports = mongoose.model('Babysitter', BabysitterSchema);
+export default mongoose.model('Babysitter', BabysitterSchema);
